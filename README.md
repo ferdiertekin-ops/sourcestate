@@ -8,6 +8,8 @@ SourceState is a research prototype built around one non-negotiable rule:
 
 Modern research workflows often flatten materially different states—full text, partial text, metadata, OCR, transcription, translation, and indirect citation—into the same fluent answer. SourceState keeps those states explicit and auditable.
 
+**Public synthetic demo:** https://huggingface.co/spaces/ferdiertekin/sourcestate-demo
+
 ## What the prototype demonstrates
 
 - Four explicit source-access states: `metadata_only`, `file_present_unreadable`, `partial_text`, `full_text`.
@@ -103,7 +105,9 @@ The v0.3 release validation recorded **14/14 architecture tests passing** and **
 
 ## Public demo deployment
 
-For a public grant demo, use the synthetic-only `space_app.py`, which intentionally disables arbitrary file uploads. A Hugging Face Spaces configuration template is provided under [`deploy/huggingface/`](deploy/huggingface/).
+The public demo at https://huggingface.co/spaces/ferdiertekin/sourcestate-demo is a **static interactive walkthrough of deterministic synthetic fixtures validated against the local v0.3 prototype**. It accepts no arbitrary file uploads and makes no server-side Python, external model, or API calls. The executable local prototype remains the authoritative implementation of the workflow.
+
+`space_app.py` is retained as a synthetic-only server-hosted demo option where Python compute hosting is available.
 
 ## Scope and current limitations
 
