@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: SourceState
+type: software
+message: "If you discuss this prototype in research, please cite the software and version."
+authors:
+  - family-names: Ertekin
+    given-names: Ferdi
+    affiliation: Trakya University, Department of History
+version: 0.3.0
+date-released: 2026-09-13
+abstract: "Auditable source-to-claim provenance prototype for AI-assisted research in the humanities and social sciences."
